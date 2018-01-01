@@ -41,32 +41,38 @@ class Map extends Component {
 		// }
 
 		// London
-		this.handleGeolocationSuccess(
-			{
-				coords: {
-					latitude: 51.507341,
-					longitude: -0.127654
-				}
-			}
-		);
+		// this.handleGeolocationSuccess({ coords: { latitude: 51.507341, longitude: -0.127654 } });
 
 		// NYC
-		this.handleGeolocationSuccess({ coords: { latitude: 40.764762, longitude: -73.973121 } })
+		// this.handleGeolocationSuccess({ coords: { latitude: 40.764762, longitude: -73.973121 } });
+
+		// Santa Monica
+		// this.handleGeolocationSuccess({ coords: { latitude: 34.010090, longitude: -118.496948 } });
 
 		// Sacremento
-		// this.handleGeolocationSuccess({ coords: { latitude: 38.387697, longitude: -121.429502 } })
+		// this.handleGeolocationSuccess({ coords: { latitude: 38.387697, longitude: -121.429502 } });
 
 		// Sydney
-		// this.handleGeolocationSuccess({ coords: { latitude: -33.865935, longitude: 151.215482 } })
+		// this.handleGeolocationSuccess({ coords: { latitude: -33.865935, longitude: 151.215482 } });
 
 		// Melbourne
-		// this.handleGeolocationSuccess({ coords: { latitude: -37.820855, longitude: 144.969598 } })
+		// this.handleGeolocationSuccess({ coords: { latitude: -37.820855, longitude: 144.969598 } });
 
 		// Sao Paulo
-		// this.handleGeolocationSuccess({ coords: { latitude: -23.584369, longitude: -46.660948 } })
+		// this.handleGeolocationSuccess({ coords: { latitude: -23.584369, longitude: -46.660948 } });
 
 		// Singapore
 		// this.handleGeolocationSuccess({ coords: { latitude: 1.36067684, longitude: 103.73457338 } });
+
+		// Random
+		this.handleGeolocationSuccess(
+			{
+				coords: {
+					latitude: 38.847158,
+					longitude: -94.387633
+				}
+			}
+		);
 	}
 
 	// geolocation API might be down, use http://ipinfo.io
@@ -241,7 +247,7 @@ class Map extends Component {
 							} }
 							className='fa fa-spin fa-2x fa-refresh'
 						/>
-						<div >
+						<div>
 							Loading
 							user
 							location
