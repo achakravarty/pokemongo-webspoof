@@ -1,12 +1,7 @@
 {
-	"parser":
-		"babel-eslint",
-	"extends":
-		"eslint-config-airbnb",
-	"plugins": [
-		"react",
-		"jsx-a11y"
-	],
+	"parser": "babel-eslint",
+	"extends": "eslint-config-airbnb",
+	"plugins": ["react", "jsx-a11y"],
 	"env": {
 		"browser": true,
 		"node": true,
@@ -19,93 +14,61 @@
 		"expect": true
 	},
 	"rules": {
-		"comma-dangle": [
-			"error",
-			"only-multiline"
-		],
-		"import/no-extraneous-dependencies":
-			"off",
-		"indent": [
-			"error",
-			"tab"
-		],
-		"jsx-a11y/no-noninteractive-element-interactions":
-			"off",
-		"jsx-quotes": [
-			"error",
-			"prefer-single"
-		],
+		"comma-dangle": ["error", "only-multiline"],
+		"import/no-extraneous-dependencies": "off",
+		"indent": ["error", "tab"],
+		"jsx-a11y/no-noninteractive-element-interactions": "off",
+		"jsx-quotes": ["error", "prefer-single"],
 		"no-confusing-arrow": [
 			"error",
 			{
 				"allowParens": true
 			}
 		],
-		"no-mixed-spaces-and-tabs":
-			"error",
+		"no-mixed-spaces-and-tabs": "error",
 		"no-multiple-empty-lines": [
 			"error",
 			{
 				"max": 2
 			}
 		],
-		"no-tabs":
-			"off",
-		"no-nested-ternary":
-			"off",
+		"no-tabs": "off",
+		"no-nested-ternary": "off",
 		"react/forbid-prop-types": [
 			"error",
 			{
-				"forbid": [
-					"any"
-				]
+				"forbid": ["any"]
 			}
 		],
 		"react/jsx-closing-bracket-location": [
 			"error",
 			{
-				"nonEmpty":
-					"after-props",
-				"selfClosing":
-					"tag-aligned"
+				"nonEmpty": "after-props",
+				"selfClosing": "tag-aligned"
 			}
 		],
-		"react/jsx-curly-spacing": [
-			"error",
-			"always"
-		],
+		"react/jsx-curly-spacing": ["error", "always"],
 		"react/jsx-filename-extension": [
 			"error",
 			{
-				"extensions": [
-					".js",
-					".jsx"
-				]
+				"extensions": [".js", ".jsx"]
 			}
 		],
-		"react/jsx-indent-props": [
+		"react/jsx-indent-props": ["error", "tab"],
+		"react/jsx-indent": ["error", "tab"],
+		"react/prefer-stateless-function": "warn",
+		"space-in-parens": "error",
+		"valid-typeof": "warn",
+		"guard-for-in": "warn",
+		"no-restricted-syntax": "warn",
+		"consistent-return": "warn",
+		"react/jsx-no-bind": "warn",
+		"no-param-reassign": "warn",
+		"max-len": [
 			"error",
-			"tab"
-		],
-		"react/jsx-indent": [
-			"error",
-			"tab"
-		],
-		"react/prefer-stateless-function":
-			"warn",
-		"space-in-parens":
-			"error",
-		"valid-typeof":
-			"warn",
-		"guard-for-in":
-			"warn",
-		"no-restricted-syntax":
-			"warn",
-		"consistent-return":
-			"warn",
-		"react/jsx-no-bind":
-			"warn",
-		"no-param-reassign":
-			"warn"
+			{
+				"code": 120
+			}
+		]
 	}
 }
